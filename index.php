@@ -15,7 +15,7 @@
   <body>
     <div class="container"><br>
       <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
-          <h1 class="text-center">Sistema de Matrícula de Estudiantes</h1><br>
+          <h1 class="text-center">Sistema de Notas Estudiantes</h1><br>
 
           <div class="row">
             <div class="col-md-4 offset-md-4">
@@ -28,7 +28,7 @@
               </tr>
               <tr>
                 <td>
-                   <p>Selecciona el Curso</p>
+                   <p>Selecciona el Ciclo</p>
                 </td>
                 <td>
                    <select class="form-control" name="choose">
