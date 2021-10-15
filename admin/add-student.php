@@ -81,9 +81,9 @@
 		    <label for="class">Grado Estudiantil</label>
 		    <select name="class" class="form-control" id="class" required="">
 		    	<option>Selecciona</option>
-		    	<option value="Primero">Tecnico</option>
-		    	<option value="Segundo">Tecnologo</option>
-		    	<option value="Tercero">Profesional</option>
+		    	<option value="Tecnico">Tecnico</option>
+		    	<option value="Tecnologo">Tecnologo</option>
+		    	<option value="Profesional">Profesional</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">

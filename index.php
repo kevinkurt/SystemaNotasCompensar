@@ -90,7 +90,7 @@
                 <td><?= isset($stname)?$stname:'';?></td>
               </tr>
               <tr>
-                <td>Número de Matrícula</td>
+                <td>Número de indentificación</td>
                 <td><?= isset($stroll)?$stroll:'';?></td>
               </tr>
               <tr>
@@ -110,7 +110,7 @@
         </div>  
       <?php 
           }else{
-                echo '<p style="color:red;">Por favor ingrese un número válido de matricula y grado</p>';
+                echo '<p style="color:red;">Por favor ingrese un número válido de cedula y ciclo</p>';
               }
             }else{
               echo '<p style="color:red;">Tu información ingresada no coincide</p>';
@@ -119,8 +119,40 @@
               <script type="text/javascript">alert("Datos no encontrados");</script>
             <?php }
           }; ?>
+
     </div>
 
+    <div style="text-align: center;"">
+
+<h1>tabla de notas</h1>
+
+<br>
+
+
+
+<br>
+
+
+
+
+<br>
+
+
+
+
+<br>
+
+
+
+
+<br>
+
+
+<br>
+
+
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

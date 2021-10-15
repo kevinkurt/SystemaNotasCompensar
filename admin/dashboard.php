@@ -111,7 +111,7 @@
     <tr>
       <th scope="col">SL</th>
       <th scope="col">Nombre</th>
-      <th scope="col">Matrícula</th>
+      <th scope="col">Cedula</th>
       <th scope="col">Dirección</th>
       <th scope="col">Contacto</th>
       <th scope="col">Fotografía</th>

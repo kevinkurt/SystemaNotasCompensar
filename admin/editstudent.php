@@ -80,9 +80,9 @@
 		    <label for="class">Grado</label>
 		    <select name="class" class="form-control" id="class" required="" value="">
 		    	<option>Select</option>
-		    	<option value="Tecnico" <?= $row['class']=='Primero'? 'selected':'' ?>>Tecnico</option>
-		    	<option value="Tecnologo" <?= $row['class']=='Segundo'? 'selected':'' ?>>Tecnologo</option>
-		    	<option value="Profesional" <?= $row['class']=='Tercero'? 'selected':'' ?>>Profesional</option>
+		    	<option value="Tecnico" <?= $row['class']=='Tecnico'? 'selected':'' ?>>Tecnico</option>
+		    	<option value="Tecnologo" <?= $row['class']=='Tecnologo'? 'selected':'' ?>>Tecnologo</option>
+		    	<option value="Profesional" <?= $row['class']=='Profesional'? 'selected':'' ?>>Profesional</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">
