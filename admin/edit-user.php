@@ -23,12 +23,12 @@
   	}
   }
 ?>
-<h1 class="text-primary"><i class="fas fa-user-plus"></i>  Editar Información de Usuario<small class="text-warning"> Editar Usuario</small></h1>
+<h1 class="text-primary"><i class="fas fa-user-plus"></i>  Editar Información del Usuario<small class="text-warning"> Docente</small></h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
      <li class="breadcrumb-item" aria-current="page"><a href="index.php">Panel de Control </a></li>
      <li class="breadcrumb-item" aria-current="page"><a href="index.php?page=user-profile">Perfil de Usuario </a></li>
-     <li class="breadcrumb-item active" aria-current="page">Editar Perfil de Usuario</li>
+     <li class="breadcrumb-item active" aria-current="page">Editar Perfil de Docente</li>
   </ol>
 </nav>
 

@@ -9,7 +9,7 @@ $user=  $_SESSION['user_login'];
      }
     }
 ?>
-<h1 class="text-primary"><i class="fas fa-user"></i>  Perfil de Usuario</h1>
+<h1 class="text-primary"><i class="fas fa-user"></i>  Perfil Del Docente</h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
      <li class="breadcrumb-item" aria-current="page"><a href="index.php">Panel de Control </a></li>

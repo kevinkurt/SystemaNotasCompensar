@@ -123,16 +123,28 @@
 				    </div>
 				  </div>
 				  <div class="text-center">
-				      <button type="submit" name="register" class="btn btn-danger">Registro</button>
+				      <button type="submit" name="register" class="btn btn-success">Registro</button>
 				    </div>
 				  </div>
+
+				  
 				</form>
+
+			
             </div>
+			<br>
+			<br>
+			<div style="margin-left:280px; text-align: center; width:550px;"  class="alert alert-success" role="alert";>
+			<p>Si tienes una cuenta de acceso administrativo, puedes <a href="login.php">Ingresar Aquí</a></p>
+			</div>
           </div>
-              <p>Si tienes una cuenta de acceso administrativo, puedes <a href="login.php">Ingresar Aquí</a></p>
+		  
+              
     </div>
-		<br><br><br><br><br><br>		  
-    	<h2>Para más desarrollos gratuitos accede a <a href="https://www.configuroweb.com/tag/php/">ConfiguroWeb</a></h2>
+		<br><br><br><br><br><br>
+		
+	
+    	
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

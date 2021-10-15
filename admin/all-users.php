@@ -8,7 +8,7 @@
      }
     }
 ?>
-<h1 class="text-primary"><i class="fas fa-users"></i>  Todos los Usuario<small class="text-warning"> Lista de Usuarios</small></h1>
+<h1 class="text-primary"><i class="fas fa-users"></i>  Todos los Docentes<small class="text-warning"> Lista de usuarios registrados</small></h1>
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
      <li class="breadcrumb-item" aria-current="page"><a href="index.php">Panel de Control </a></li>

@@ -66,8 +66,8 @@
 		    <input name="name" type="text" class="form-control" id="name" value="<?= isset($name)? $name: '' ; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="roll">Número de Matrícula</label>
-		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{6}" id="roll" required="">
+		    <label for="roll">Número de Cedula</label>
+		    <input name="roll" type="text" value="<?= isset($roll)? $roll: '' ; ?>" class="form-control" pattern="[0-9]{10}" id="roll" required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="address">Dirección de Estudiante</label>
@@ -81,11 +81,9 @@
 		    <label for="class">Grado Estudiantil</label>
 		    <select name="class" class="form-control" id="class" required="">
 		    	<option>Selecciona</option>
-		    	<option value="Primero">Primero</option>
-		    	<option value="Segundo">Segundo</option>
-		    	<option value="Tercero">Tercero</option>
-		    	<option value="Cuarto">Cuarto</option>
-		    	<option value="Quinto">Quinto</option>
+		    	<option value="Primero">Tecnico</option>
+		    	<option value="Segundo">Tecnologo</option>
+		    	<option value="Tercero">Profesional</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">

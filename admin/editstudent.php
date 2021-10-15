@@ -65,8 +65,8 @@
 		    <input name="name" type="text" class="form-control" id="name" value="<?php echo $row['name']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
-		    <label for="roll">Número de Matrícula</label>
-		    <input name="roll" type="text" class="form-control" pattern="[0-9]{6}" id="roll" value="<?php echo $row['roll']; ?>" required="">
+		    <label for="roll">Número de Cedula</label>
+		    <input name="roll" type="text" class="form-control" pattern="[0-9]{10}" id="roll" value="<?php echo $row['roll']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="address">Dirección de Estudiante</label>
@@ -80,11 +80,9 @@
 		    <label for="class">Grado</label>
 		    <select name="class" class="form-control" id="class" required="" value="">
 		    	<option>Select</option>
-		    	<option value="Primero" <?= $row['class']=='Primero'? 'selected':'' ?>>Primero</option>
-		    	<option value="Segundo" <?= $row['class']=='Segundo'? 'selected':'' ?>>Segundo</option>
-		    	<option value="Tercero" <?= $row['class']=='Tercero'? 'selected':'' ?>>Tercero</option>
-		    	<option value="Cuarto" <?= $row['class']=='Cuarto'? 'selected':'' ?>>Cuarto</option>
-		    	<option value="Quinto" <?= $row['class']=='Quinto'? 'selected':'' ?>>Quinto</option>
+		    	<option value="Tecnico" <?= $row['class']=='Primero'? 'selected':'' ?>>Tecnico</option>
+		    	<option value="Tecnologo" <?= $row['class']=='Segundo'? 'selected':'' ?>>Tecnologo</option>
+		    	<option value="Profesional" <?= $row['class']=='Tercero'? 'selected':'' ?>>Profesional</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">
@@ -92,7 +90,7 @@
 		    <input name="photo" type="file" class="form-control" id="photo">
 	  	</div>
 	  	<div class="form-group text-center">
-		    <input name="updatestudent" value="Editar Estudiante" type="submit" class="btn btn-danger">
+		    <input name="updatestudent" value="Editar Estudiante" type="submit" class="btn btn-success">
 	  	</div>
 	 </form>
 </div>

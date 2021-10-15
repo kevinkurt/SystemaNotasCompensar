@@ -18,7 +18,7 @@
 
 <div class="row student">
   <div class="col-sm-4">
-     <div class="card text-white bg-primary mb-3">
+     <div class="card text-white bg-success mb-3">
       <div class="card-header">
         <div class="row">
           <div class="col-sm-4">
@@ -31,7 +31,7 @@
           </div>
         </div>
       </div>
-      <div class="list-group-item-primary list-group-item list-group-item-action">
+      <div class="list-group-item-success list-group-item list-group-item-action">
         <div class="row">
           <div class="col-sm-8">
             <p class="">Ver Estudiantes</p>
@@ -45,7 +45,7 @@
   </div>
 
   <div class="col-sm-4">
-     <div class="card text-white bg-info mb-3">
+     <div class="card text-white bg-success mb-3">
       <div class="card-header">
         <div class="row">
           <div class="col-sm-4">
@@ -58,7 +58,7 @@
           </div>
         </div>
       </div>
-      <div class="list-group-item-primary list-group-item list-group-item-action">
+      <div class="list-group-item-success list-group-item list-group-item-action">
          <a href="index.php?page=all-users">
         <div class="row">
           <div class="col-sm-8">
@@ -74,7 +74,7 @@
   </div>
 
   <div class="col-sm-4">
-     <div class="card text-white bg-warning mb-3">
+     <div class="card text-white bg-success mb-3">
       <div class="card-header">
         <div class="row">
           <?php $usernameshow = $_SESSION['user_login']; $userspro = mysqli_query($db_con,"SELECT * FROM `users` WHERE `username`='$usernameshow';"); $userrow=mysqli_fetch_array($userspro); ?>
@@ -85,11 +85,11 @@
           <div class="col-sm-6">
             
             <div class="clearfix"></div>
-            <div class="float-sm-right">Hola hola</div>
+            <div class="float-sm-right">Bienvenido</div>
           </div>
         </div>
       </div>
-      <div class="list-group-item-primary list-group-item list-group-item-action">
+      <div class="list-group-item-success list-group-item list-group-item-action">
         <a href="index.php?page=user-profile">
         <div class="row">
           <div class="col-sm-8">

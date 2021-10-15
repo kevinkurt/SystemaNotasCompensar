@@ -35,21 +35,16 @@
                      <option value="">
                        Selecciona
                      </option>
-                     <option value="Primero">
-                       Primero
+                     <option value="Tecnico">
+                       Tecnico
                      </option>
-                     <option value="Segundo">
-                       Segundo
+                     <option value="Tecnologo">
+                       Tecnologo
                      </option>
-                     <option value="Tercero">
-                       Tercero
+                     <option value="Profesional">
+                       profesional
                      </option>
-                     <option value="Cuarto">
-                       Cuarto
-                     </option>
-                     <option value="Quinto">
-                       Quinto
-                     </option>
+ 
                    </select>
                 </td>
               </tr>
@@ -59,7 +54,7 @@
                   <p><label for="roll">Número de cedula </label></p>
                 </td>
                 <td>
-                  <input class="form-control" type="text" pattern="[0-9]{6}" id="roll" placeholder="6 dígitos..." name="roll">
+                  <input class="form-control" type="text" pattern="[0-9]{10}" id="roll" placeholder="10 dígitos..." name="roll">
                 </td>
               </tr>
               <tr>
