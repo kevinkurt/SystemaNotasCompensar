@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Matrícula de Estudiantes</title>
+    <title>Sistema de notas </title>
   </head>
   <body>
     <div class="container"><br>
-      <a class="btn btn-primary float-right" href="admin/login.php">Panel Administrativo</a>
-          <h1 class="text-center">Sistema de Notas Estudiantes</h1><br>
+      <a class="btn btn-success float-right" href="admin/login.php">Panel Administrativo</a>
+          <h1 class="text-center"; style="padding-left: 160px;">Sistema de Notas Estudiantes</h1><br>
 
           <div class="row">
             <div class="col-md-4 offset-md-4">
@@ -23,7 +23,7 @@
             <table class="text-center infotable">
               <tr>
                 <th colspan="2">
-                  <p class="text-center">Información del Estudiante</p>
+                  <p class="text-center" >Información del Estudiante</p>
                 </th>
               </tr>
               <tr>
@@ -56,7 +56,7 @@
 
               <tr>
                 <td>
-                  <p><label for="roll">Número Matricula</label></p>
+                  <p><label for="roll">Número de cedula </label></p>
                 </td>
                 <td>
                   <input class="form-control" type="text" pattern="[0-9]{6}" id="roll" placeholder="6 dígitos..." name="roll">
@@ -64,7 +64,7 @@
               </tr>
               <tr>
                 <td colspan="2" class="text-center">
-                  <input class="btn btn-danger" type="submit" name="showinfo">
+                  <input class="btn btn-success" type="submit" name="showinfo">
                 </td>
               </tr>
             </table>
@@ -88,9 +88,9 @@
               ?>
         <div class="row">
           <div class="col-sm-6 offset-sm-3">
-            <table class="table table-bordered">
+            <table class="table table-bordered"; style="border: 3px solid rgb(34,139,34)">
               <tr>
-                <td rowspan="5"><h3>Información de Estudiante</h3><img class="img-thumbnail" src="admin/images/<?= isset($photo)?$photo:'';?>" width="250px"></td>
+                <td rowspan="5"; style="border: 3px solid rgb(34,139,34);"><h3>Información de Estudiante</h3><img class="img-thumbnail" src="admin/images/<?= isset($photo)?$photo:'';?>" width="250px"></td>
                 <td>Nombre</td>
                 <td><?= isset($stname)?$stname:'';?></td>
               </tr>
