@@ -115,23 +115,20 @@
 
         
 
-        <div class="row2" style="padding-left: 0px; position: static;">
+      <div class="row2" style="padding-left: 0px; position: static;">
         
-        <div class="col-sm-9" style="text-align: ;">
-        <h1>tabla de notas</h1>
+        <div class="col-sm-9">
+        <h1>Datos generales</h1>
             <table class="table table-bordered"; style="border: 3px solid rgb(34,139,34)">
               <tr>
-                <td>Nombre</td>
                 <td>Nombre</td>
                 <td><?= isset($stname)?$stname:'';?></td>
               </tr>
               <tr>
                 <td>Número de indentificación</td>
-                <td>Número de indentificación</td>
                 <td><?= isset($stroll)?$stroll:'';?></td>
               </tr>
               <tr>
-                <td>Grado</td>
                 <td>Grado</td>
                 <td><?= isset($stclass)?$stclass:'';?></td>
               </tr>
@@ -140,11 +137,57 @@
                 <td><?= isset($city)?$city:'';?></td>
               </tr>
               <tr>
+                </tr>
                 <td>Facultad</td>
-                <td><?= isset($Facultad)?$Facultad:'';?></td>
+               
+                <td><?= isset($Facultad)?$Facultad:'';?></td> 
               </tr>
+              
             </table>
           </div>
+
+ <h1>Consultar Notas Actuales</h1>
+
+
+<table  class="table table-bordered"; style="border: 3px solid rgb(34,139,34)">
+  <tr>
+    <th scope="col">Materia</th>
+    <th scope="col">Creditos</th>
+    <th scope="col">Nota final</th>
+    <th scope="col">Definitiva</th>
+   
+  </tr>
+
+  <tr>
+    <td><?= isset($Facultad)?$Facultad:'';?></td>
+    <td>192.02</td>
+    <td>1</td>
+    <td>192.02</td>
+  </tr>
+
+  <tr>
+    <td>Fundas de colores</td>
+    <td>2.50</td>
+    <td>5</td>
+    <td>12.50</td>
+  </tr>
+
+  <tr>
+    <td>Reproductor de radio &amp; control remoto</td>
+    <td>12.99</td>
+    <td>1</td>
+    <td>12.99</td>
+  </tr>
+
+  <tr>
+    <th scope="row">TOTAL</th>
+    <td>-</td>
+    <td>7</td>
+    <td><strong>207.51</strong></td>
+  </tr>
+</table>
+
+
         </div>  
     </div>
 
