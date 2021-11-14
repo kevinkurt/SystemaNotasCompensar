@@ -13,13 +13,16 @@
   	$roll = $_POST['roll'];
   	$address = $_POST['address'];
   	$pcontact = $_POST['pcontact'];
+	$Facultad = $_POST ['Facultad'];
   	$class = $_POST['class'];
   	
   	$photo = explode('.', $_FILES['photo']['name']);
   	$photo = end($photo); 
   	$photo = $roll.date('Y-m-d-m-s').'.'.$photo;
 
-  	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `city`, `pcontact`, `photo`) VALUES ('$name', '$roll', '$class', '$address', '$pcontact','$photo');";
+  	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `city`, `pcontact`, `photo`,`Facultad`) VALUES ('$name', '$roll', '$class', '$address', '$pcontact','$photo','$Facultad');";
+
+
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Estudiante Ingresado Exitosamente</p>';
   		move_uploaded_file($_FILES['photo']['tmp_name'], 'images/'.$photo);
@@ -61,6 +64,13 @@
 	</div>
 		<?php } ?>
 	<form enctype="multipart/form-data" method="POST" action="">
+
+	<div class="form-group" style="padding-left: 0px;position:relative;padding-bottom: 0px">
+		    <label for="photo">Fotografía de Estudiante</label>
+		    <input name="photo" type="file" class="form-control" id="photo" required="">
+	  	</div>
+
+
 		<div class="form-group">
 		    <label for="name">Nombre de Estudiante</label>
 		    <input name="name" type="text" class="form-control" id="name" value="<?= isset($name)? $name: '' ; ?>" required="">
@@ -86,13 +96,19 @@
 		    	<option value="Profesional">Profesional</option>
 		    </select>
 	  	</div>
-	  	<div class="form-group">
-		    <label for="photo">Fotografía de Estudiante</label>
-		    <input name="photo" type="file" class="form-control" id="photo" required="">
-	  	</div>
+		  <div class="form-group">
+		    <label for="Facultad">Facultad</label>
+		    <select name="Facultad" class="form-control" id="Facultad" required="">
+		    	<option>Selecciona</option>
+		    	<option value="IngSistemas">ing sistemas</option>
+		    	<option value="ingtelecomunicaciones">ing telecomunicaciones</option>
+		    	<option value="ingsoftware">ing de software</option>
+		    </select>
+	  	</div>	
 	  	<div class="form-group text-center">
 		    <input name="addstudent" value="Agregar Estudiante" type="submit" class="btn btn-danger">
 	  	</div>
+		
 	 </form>
 </div>
 </div>

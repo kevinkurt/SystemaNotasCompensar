@@ -79,6 +79,7 @@
                 $stclass= $row['class'];
                 $city= $row['city'];
                 $photo= $row['photo'];
+                $Facultad= $row['Facultad'];
                 $pcontact= $row['pcontact'];
               ?>
         <div class="row">
@@ -108,6 +109,47 @@
             </table>
           </div>
         </div>  
+
+        <div>
+
+
+        
+
+        <div class="row2" style="padding-left: 0px; position: static;">
+        
+        <div class="col-sm-9" style="text-align: ;">
+        <h1>tabla de notas</h1>
+            <table class="table table-bordered"; style="border: 3px solid rgb(34,139,34)">
+              <tr>
+                <td>Nombre</td>
+                <td>Nombre</td>
+                <td><?= isset($stname)?$stname:'';?></td>
+              </tr>
+              <tr>
+                <td>Número de indentificación</td>
+                <td>Número de indentificación</td>
+                <td><?= isset($stroll)?$stroll:'';?></td>
+              </tr>
+              <tr>
+                <td>Grado</td>
+                <td>Grado</td>
+                <td><?= isset($stclass)?$stclass:'';?></td>
+              </tr>
+              <tr>
+                <td>Dirección</td>
+                <td><?= isset($city)?$city:'';?></td>
+              </tr>
+              <tr>
+                <td>Facultad</td>
+                <td><?= isset($Facultad)?$Facultad:'';?></td>
+              </tr>
+            </table>
+          </div>
+        </div>  
+    </div>
+
+
+        </div>
       <?php 
           }else{
                 echo '<p style="color:red;">Por favor ingrese un número válido de cedula y ciclo</p>';
@@ -123,36 +165,6 @@
     </div>
 
     <div style="text-align: center;"">
-
-<h1>tabla de notas</h1>
-
-<br>
-
-
-
-<br>
-
-
-
-
-<br>
-
-
-
-
-<br>
-
-
-
-
-<br>
-
-
-<br>
-
-
-
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

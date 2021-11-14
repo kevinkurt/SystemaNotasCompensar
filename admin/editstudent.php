@@ -16,6 +16,7 @@
   	$roll = $_POST['roll'];
   	$address = $_POST['address'];
   	$pcontact = $_POST['pcontact'];
+	$Facultad = $_POST ['Facultad'];
   	$class = $_POST['class'];
   	
   	if (!empty($_FILES['photo']['name'])) {
@@ -28,7 +29,7 @@
   	}
   	
 
-  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`city`='$address',`pcontact`='$pcontact',`photo`='$photo' WHERE `id`= $id";
+  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`city`='$address',`pcontact`='$pcontact',`photo`='$photo',`Facultad`='$Facultad' WHERE `id`= $id";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Student Updated!</p>';
 		if (!empty($_FILES['photo']['name'])) {
@@ -52,7 +53,7 @@
 
 	<?php
 		if (isset($id)) {
-			$query = "SELECT `id`, `name`, `roll`, `class`, `city`, `pcontact`, `photo`, `datetime` FROM `student_info` WHERE `id`=$id";
+			$query = "SELECT `id`, `name`, `roll`, `class`, `city`, `pcontact`, `photo`,`Facultad`, `datetime` FROM `student_info` WHERE `id`=$id";
 			$result = mysqli_query($db_con,$query);
 			$row = mysqli_fetch_array($result);
 		}
@@ -83,6 +84,15 @@
 		    	<option value="Tecnico" <?= $row['class']=='Tecnico'? 'selected':'' ?>>Tecnico</option>
 		    	<option value="Tecnologo" <?= $row['class']=='Tecnologo'? 'selected':'' ?>>Tecnologo</option>
 		    	<option value="Profesional" <?= $row['class']=='Profesional'? 'selected':'' ?>>Profesional</option>
+		    </select>
+	  	</div>
+		  <div class="form-group">
+		    <label for="Facultad">Facultad</label>
+		    <select name="Facultad" class="form-control" id="Facultad" required="" value="">
+		    	<option>Select</option>
+		    	<option value="IngSistemas" <?= $row['Facultad']=='IngSistemas'? 'selected':'' ?>>Ing de Sistemas</option>
+		    	<option value="ingtelecomunicaciones" <?= $row['Facultad']=='ingtelecomunicaciones'? 'selected':'' ?>>ing de telecomunicaciones</option>
+		    	<option value="Profesional" <?= $row['Facultad']=='Profesional'? 'selected':'' ?>>ing de software</option>
 		    </select>
 	  	</div>
 	  	<div class="form-group">
