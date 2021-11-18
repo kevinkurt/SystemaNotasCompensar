@@ -17,6 +17,7 @@
   	$address = $_POST['address'];
   	$pcontact = $_POST['pcontact'];
 	$Facultad = $_POST ['Facultad'];
+	$Materia = $_POST ['Materia'];
   	$class = $_POST['class'];
   	
   	if (!empty($_FILES['photo']['name'])) {
@@ -29,7 +30,7 @@
   	}
   	
 
-  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`city`='$address',`pcontact`='$pcontact',`photo`='$photo',`Facultad`='$Facultad' WHERE `id`= $id";
+  	$query = "UPDATE `student_info` SET `name`='$name',`roll`='$roll',`class`='$class',`city`='$address',`pcontact`='$pcontact',`photo`='$photo',`Facultad`='$Facultad', `Materia`='$Materia' WHERE `id`= $id";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Student Updated!</p>';
 		if (!empty($_FILES['photo']['name'])) {
@@ -53,7 +54,7 @@
 
 	<?php
 		if (isset($id)) {
-			$query = "SELECT `id`, `name`, `roll`, `class`, `city`, `pcontact`, `photo`,`Facultad`, `datetime` FROM `student_info` WHERE `id`=$id";
+			$query = "SELECT `id`, `name`, `roll`, `class`, `city`, `pcontact`, `photo`,`Facultad`,`Materia`, `datetime` FROM `student_info` WHERE `id`=$id";
 			$result = mysqli_query($db_con,$query);
 			$row = mysqli_fetch_array($result);
 		}
@@ -95,6 +96,17 @@
 		    	<option value="Profesional" <?= $row['Facultad']=='Profesional'? 'selected':'' ?>>ing de software</option>
 		    </select>
 	  	</div>
+
+		  <div class="form-group">
+		    <label for="Materia">Materia</label>
+		    <select name="Materia" class="form-control" id="Materia" required="" value="">
+		    	<option>Select</option>
+		    	<option value="DesarrolloWeb" <?= $row['Materia']=='DesarrolloWeb'? 'selected':'' ?>>Desarrollo Web</option>
+		    	<option value="Emprendimiento" <?= $row['Materia']=='Emprendimiento'? 'selected':'' ?>>Emprendimiento</option>
+		    	<option value="gestionycalidad" <?= $row['Materia']=='gestionycalidad'? 'selected':'' ?>>Gestion y Calidad de la información</option>
+		    </select>
+	  	</div>
+
 	  	<div class="form-group">
 		    <label for="photo">Fotografía</label>
 		    <input name="photo" type="file" class="form-control" id="photo">

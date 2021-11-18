@@ -80,6 +80,7 @@
                 $city= $row['city'];
                 $photo= $row['photo'];
                 $Facultad= $row['Facultad'];
+                $Materia= $row['Materia'];
                 $pcontact= $row['pcontact'];
               ?>
         <div class="row">
@@ -121,26 +122,26 @@
         <h1>Datos generales</h1>
             <table class="table table-bordered"; style="border: 3px solid rgb(34,139,34)">
               <tr>
-                <td>Nombre</td>
-                <td><?= isset($stname)?$stname:'';?></td>
+                <td>Programa</td>
+                <td>Tecnologia en sistemas de gestion y comunicacion</td>
               </tr>
               <tr>
-                <td>Número de indentificación</td>
-                <td><?= isset($stroll)?$stroll:'';?></td>
+                <td>Semestre</td>
+                <td>7</td>
               </tr>
               <tr>
-                <td>Grado</td>
-                <td><?= isset($stclass)?$stclass:'';?></td>
+                <td>promedio</td>
+                <td>4.5</td>
               </tr>
               <tr>
-                <td>Dirección</td>
-                <td><?= isset($city)?$city:'';?></td>
+                <td>Materias inscritas</td>
+                <td>5</td>
               </tr>
               <tr>
                 </tr>
                 <td>Facultad</td>
                
-                <td><?= isset($Facultad)?$Facultad:'';?></td> 
+                <td>ing de sistemas</td> 
               </tr>
               
             </table>
@@ -160,30 +161,30 @@
 
   <tr>
     <td><?= isset($Facultad)?$Facultad:'';?></td>
-    <td>192.02</td>
-    <td>1</td>
-    <td>192.02</td>
+    <td>3</td>
+    <td>4.0</td>
+    <td>4.0</td>
   </tr>
 
   <tr>
-    <td>Fundas de colores</td>
-    <td>2.50</td>
-    <td>5</td>
-    <td>12.50</td>
+    <td>Desarrollo web</td>
+    <td>3</td>
+    <td>5.0</td>
+    <td>5.0</td>
   </tr>
 
   <tr>
-    <td>Reproductor de radio &amp; control remoto</td>
-    <td>12.99</td>
-    <td>1</td>
-    <td>12.99</td>
+    <td>Internet de las cosas </td>
+    <td>4</td>
+    <td>4.5</td>
+    <td>4.5</td>
   </tr>
 
   <tr>
     <th scope="row">TOTAL</th>
-    <td>-</td>
-    <td>7</td>
-    <td><strong>207.51</strong></td>
+    <td>10</td>
+    <td>13.5</td>
+    <td>Promedio <strong>4.6</strong></td>
   </tr>
 </table>
 

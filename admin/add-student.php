@@ -14,13 +14,14 @@
   	$address = $_POST['address'];
   	$pcontact = $_POST['pcontact'];
 	$Facultad = $_POST ['Facultad'];
+	$Materia = $_POST ['Materia'];
   	$class = $_POST['class'];
   	
   	$photo = explode('.', $_FILES['photo']['name']);
   	$photo = end($photo); 
   	$photo = $roll.date('Y-m-d-m-s').'.'.$photo;
 
-  	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `city`, `pcontact`, `photo`,`Facultad`) VALUES ('$name', '$roll', '$class', '$address', '$pcontact','$photo','$Facultad');";
+  	$query = "INSERT INTO `student_info`(`name`, `roll`, `class`, `city`, `pcontact`, `photo`,`Facultad`,`Materia`) VALUES ('$name', '$roll', '$class', '$address','$pcontact','$photo','$Facultad','$Materia');";
 
 
   	if (mysqli_query($db_con,$query)) {
@@ -105,6 +106,16 @@
 		    	<option value="ingsoftware">ing de software</option>
 		    </select>
 	  	</div>	
+		  <div class="form-group">
+		    <label for="Materia">Materia</label>
+		    <select name="Materia" class="form-control" id="Materia" required="">
+		    	<option>Selecciona</option>
+		    	<option value="DesarrolloWeb">Desarrollo Web</option>
+		    	<option value="Emprendimiento">Emprendimiento</option>
+		    	<option value="gestionycalidad">Gestion y Calidad de la información</option>
+		    </select>
+	  	</div>	
+
 	  	<div class="form-group text-center">
 		    <input name="addstudent" value="Agregar Estudiante" type="submit" class="btn btn-danger">
 	  	</div>
