@@ -81,6 +81,7 @@
                 $photo= $row['photo'];
                 $Facultad= $row['Facultad'];
                 $Materia= $row['Materia'];
+                $Programa = $row ['Programa'];
                 $pcontact= $row['pcontact'];
               ?>
         <div class="row">
@@ -123,7 +124,7 @@
             <table class="table table-bordered"; style="border: 3px solid rgb(34,139,34)">
               <tr>
                 <td>Programa</td>
-                <td>Tecnologia en sistemas de gestion y comunicacion</td>
+                <td><?= isset($Programa)?$Programa:'';?></td>
               </tr>
               <tr>
                 <td>Semestre</td>
